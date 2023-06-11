@@ -11,8 +11,8 @@ keymap.set("n", "<leader>q", ":qa<CR>")
 -- clear highlighted search results
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
--- do not copy deleted char
-keymap.set("n", "x", "_x")
+-- run shell command
+keymap.set("n", "<leader>r", ":!")
 
 -- window management
 keymap.set("n", "<leader>h", "<C-w>h") -- focus left
