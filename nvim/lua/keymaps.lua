@@ -5,8 +5,11 @@ local keymap = vim.keymap
 -- Save all opened files in tabs.
 keymap.set("n", "<leader>s", ":wa<CR>") 
 
--- Close all buffers
+-- Close all, exit vim
 keymap.set("n", "<leader>q", ":qa<CR>") 
+
+-- Close all buffers
+keymap.set("n", "<leader>w", ":bufdo bd<CR>:NvimTreeToggle<CR>") 
 
 -- clear highlighted search results
 keymap.set("n", "<leader>nh", ":nohl<CR>")
