@@ -60,6 +60,15 @@ return packer.startup(function(use)
 
   use("mbbill/undotree")
 
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {}
+    end
+  }
+
   if packer_bootstrap then
     require("packer").sync()
   end
