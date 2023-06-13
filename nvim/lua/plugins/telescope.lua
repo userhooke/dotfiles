@@ -26,8 +26,8 @@ telescope.setup({
   },
 })
 
-telescope.load_extension("fzf")
-telescope.load_extension("ui-select")
+-- telescope.load_extension("fzf")
+-- telescope.load_extension("ui-select")
 
 vim.keymap.set("n", "<Tab>fg", "<cmd>Telescope git_files<cr>") -- find files inside git project
 vim.keymap.set("n", "<Tab>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore

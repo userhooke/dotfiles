@@ -1,3 +1,7 @@
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local opt = vim.opt
 
 opt.relativenumber = true
@@ -32,7 +36,7 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 
--- disable vim native bacups
+-- disable vim native backups
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
