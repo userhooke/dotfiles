@@ -59,6 +59,7 @@ return packer.startup(function(use)
   use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 
   use("mbbill/undotree")
+  use("theprimeagen/harpoon")
 
   use {
     "folke/which-key.nvim",
