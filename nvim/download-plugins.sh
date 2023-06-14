@@ -43,3 +43,7 @@ download L3MON4D3 LuaSnip
 # for autocompletion
 download saadparwaiz1 cmp_luasnip
 
+# AI
+download github copilot.vim
+# :Copilot setup
+
