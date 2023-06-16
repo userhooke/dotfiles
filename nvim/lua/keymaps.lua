@@ -15,7 +15,7 @@ keymap.set("n", "<Tab>s", ":wa<CR>")
 keymap.set("n", "<Tab>q", ":qa<CR>") 
 
 -- Close all buffers
-keymap.set("n", "<Tab>w", ":bufdo bd<CR>:NvimTreeToggle<CR>") 
+keymap.set("n", "<Tab>w", ":bufdo bd<CR>") 
 
 -- clear highlighted search results
 keymap.set("n", "<Tab>nh", ":nohl<CR>")

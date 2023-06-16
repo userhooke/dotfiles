@@ -10,9 +10,6 @@ download nvim-lua plenary.nvim
 # color theme 
 download rose-pine neovim
 
-# file explorer
-download nvim-tree nvim-tree.lua
-
 # statusline
 download nvim-lualine lualine.nvim
 
@@ -27,22 +24,31 @@ download folke which-key.nvim
 
 # fuzzy finding w/ telescope
 download nvim-telescope telescope.nvim
-# dependency for better sorting performance
+
+# file browser
+download nvim-telescope telescope-file-browser.nvim
+
+# better sorting performance
 download nvim-telescope telescope-fzf-native.nvim # then run "make" to build sources 
+
 # for showing lsp code actions
 download nvim-telescope telescope-ui-select.nvim
 
 # completion plugin
 download hrsh7th nvim-cmp
+
 # source for text in buffer
 download hrsh7th cmp-buffer
+
 # source for file system paths
 download hrsh7th cmp-path
 
 # snippet engine
 download L3MON4D3 LuaSnip
+
 # for autocompletion
 download saadparwaiz1 cmp_luasnip
 
-download github copilot.vim # :Copilot setup
+# Copilot integration
+download github copilot.vim # Start Neovim and invoke :Copilot setup.
 

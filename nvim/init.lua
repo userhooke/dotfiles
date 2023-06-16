@@ -2,7 +2,6 @@ require("options")
 require("keymaps")
 require("colorscheme")
 
-require("plugins.nvim-tree")
 require("plugins.lualine")
 require("plugins.telescope")
 require("plugins.nvim-cpm")
