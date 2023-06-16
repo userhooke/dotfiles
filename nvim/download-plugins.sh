@@ -34,6 +34,9 @@ download nvim-telescope telescope-fzf-native.nvim # then run "make" to build sou
 # for showing lsp code actions
 download nvim-telescope telescope-ui-select.nvim
 
+# for better code parsing and highlighting
+download nvim-treesitter nvim-treesitter # then run ":TSUpdate" to download parsers
+
 # completion plugin
 download hrsh7th nvim-cmp
 

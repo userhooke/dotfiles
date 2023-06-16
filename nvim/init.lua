@@ -8,4 +8,5 @@ require("plugins.nvim-cpm")
 require("plugins.undotree")
 require("plugins.harpoon")
 require("plugins.which-key")
+require("plugins.treesitter")
 

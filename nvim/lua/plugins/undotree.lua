@@ -1,4 +1,4 @@
--- import undotree plugin safely
+-- import plugin safely
 local status, undotree = pcall(require, "undotree")
 if not status then
   return
