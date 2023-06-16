@@ -1,3 +1,5 @@
+-- plugin specific keymaps are in plugin folder
+
 -- <S-...>  shift-key                      shift <S-
 -- <C-...>  control-key                    control ctrl <C-
 -- <M-...>  alt-key or meta-key            meta alt <M-
@@ -35,5 +37,9 @@ keymap.set("n", "<Tab>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<Tab>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<Tab>tp", ":tabp<CR>") --  go to previous tab
 
--- plugin specific keymaps are in plugin folder
+-- disable d,x,s,c to copy deleted to clipboard
+keymap.set("n", "d", "\"_d")
+keymap.set("n", "x", "\"_x")
+keymap.set("n", "s", "\"_s")
+keymap.set("n", "c", "\"_c")
 
