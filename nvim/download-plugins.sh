@@ -35,7 +35,7 @@ download nvim-telescope telescope-fzf-native.nvim # then run "make" to build sou
 download nvim-telescope telescope-ui-select.nvim
 
 # for better code parsing and highlighting
-download nvim-treesitter nvim-treesitter # then run ":TSUpdate" to download parsers
+download nvim-treesitter nvim-treesitter 
 
 # completion plugin
 download hrsh7th nvim-cmp
@@ -54,4 +54,8 @@ download saadparwaiz1 cmp_luasnip
 
 # Copilot integration
 download github copilot.vim # Start Neovim and invoke :Copilot setup.
+
+# Optional non-neovim dependencies
+# brew install ripgrep
+# brew install fd
 
