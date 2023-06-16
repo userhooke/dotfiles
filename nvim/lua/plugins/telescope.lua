@@ -34,10 +34,13 @@ telescope.setup({
 telescope.load_extension("ui-select")
 telescope.load_extension("file_browser")
 
-vim.keymap.set("n", "<Tab>fg", "<cmd>Telescope git_files<cr>") -- find files inside git project
-vim.keymap.set("n", "<Tab>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-vim.keymap.set("n", "<Tab>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
-vim.keymap.set("n", "<Tab>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
-vim.keymap.set("n", "<Tab>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+local builtin = require('telescope.builtin')
+
+vim.keymap.set('n', '<Tab>ff', builtin.find_files, {})
+vim.keymap.set('n', '<Tab>fg', builtin.git_files, {})
+vim.keymap.set({'n', "v"}, '<Tab>fs', builtin.grep_string, {})
+vim.keymap.set('n', '<Tab>fl', builtin.live_grep, {})
+vim.keymap.set('n', '<Tab>fb', builtin.buffers, {})
+vim.keymap.set('n', '<Tab>fh', builtin.help_tags, {})
 vim.keymap.set("n", "<Tab>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>") -- open file_browser with the path of the current buffer
 
