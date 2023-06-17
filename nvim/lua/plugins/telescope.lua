@@ -26,6 +26,7 @@ telescope.setup({
     file_browser = {
       hijack_netrw = true, -- disables netrw and use telescope-file-browser in its place
       dir_icon = "🗂️",
+      hidden = { file_browser = true, folder_browser = true },
     },
   },
 })
