@@ -23,9 +23,6 @@ opt.background = "light"
 
 opt.backspace = "indent,eol,start"
 
--- clipboard
-opt.clipboard:append("unnamedplus")
-
 -- split windows
 opt.splitright = true
 opt.splitbelow = true

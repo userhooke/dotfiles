@@ -55,6 +55,9 @@ download saadparwaiz1 cmp_luasnip
 # Copilot integration
 download github copilot.vim # Start Neovim and invoke :Copilot setup.
 
+# game
+download theprimeagen vim-be-good
+
 # Optional non-neovim dependencies
 # brew install ripgrep
 # brew install fd

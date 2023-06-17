@@ -23,6 +23,9 @@ keymap.set("n", "<Tab>nh", ":nohl<CR>")
 -- run shell command
 keymap.set("n", "<Tab>r", ":!")
 
+-- open terminal
+keymap.set("n", "<Tab>t", ":terminal<CR>")
+
 -- window management
 keymap.set("n", "<Tab>h", "<C-w>h") -- focus left
 keymap.set("n", "<Tab>l", "<C-w>l") -- focus right
@@ -37,9 +40,8 @@ keymap.set("n", "<Tab>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<Tab>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<Tab>tp", ":tabp<CR>") --  go to previous tab
 
--- disable d,x,s,c to copy deleted to clipboard
-keymap.set("n", "d", "\"_d")
-keymap.set("n", "x", "\"_x")
-keymap.set("n", "s", "\"_s")
-keymap.set("n", "c", "\"_c")
+-- file navigation
+keymap.set("n", "<C-d>", "<C-d>zz") -- scroll down half page, keep cursor in middle
+keymap.set("n", "<space>", "<C-d>zz") -- scroll down half page, keep cursor in middle
+keymap.set("n", "<C-u>", "<C-u>zz") -- scroll up half page, keep cursor in middle
 
