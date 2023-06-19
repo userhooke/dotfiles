@@ -17,6 +17,9 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+-- sync with system clipboard
+opt.clipboard:append("unnamedplus")
+
 -- appearance
 opt.termguicolors = true
 opt.background = "light"
