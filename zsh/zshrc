@@ -1,0 +1,56 @@
+alias l="ls -ltrah"
+alias vim="nvim"
+alias v="nvim ."
+
+backup() {
+    TODAY=`date '+%Y_%m_%d__%H_%M_%S'`
+
+    if [ -z "$2" ]
+        then
+            LABEL=""
+        else
+            LABEL="${2}__"
+    fi
+
+    if [ ! -d ".bak" ]
+        then mkdir ".bak"
+    fi
+
+    tar --exclude='node_modules' --exclude='.bak' -czvf ".bak/${LABEL}${1}__${TODAY}.tar.gz" "$1"
+}
+
+encrypt() {
+    # check if KEY in ENV
+    if [ -z "$KEY" ]
+        then
+            echo "KEY not set in ENV"
+            return
+    fi
+
+    if [ -f "${1}.age" ]
+        then backup "${1}.age"
+    fi
+
+    age --encrypt -i $KEY -o "${1}.age" $1
+    echo "encrypted."
+}
+
+encrypt-pass() {
+    if [ -f "${1}.age" ]
+        then backup "${1}.age"
+    fi
+
+    age --encrypt -p -o "${1}.age" $1
+    echo "encrypted."
+}
+
+decrypt() {
+    # if there is a key in ENV, then use KEY decrypt, otherwise use password
+    if [ -z "$KEY" ]
+        then
+            age -p $1 
+        else
+            age --decrypt -i $KEY $1 
+    fi 
+}
+
