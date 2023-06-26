@@ -4,5 +4,5 @@ if not status then
   return
 end
 
-vim.keymap.set("n", "<Tab>u", ":UndotreeToggle<cr>")
+vim.keymap.set("n", "<Tab>u", ":UndotreeToggle<cr>", {desc = "open undotree"})
 

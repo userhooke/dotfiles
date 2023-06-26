@@ -37,11 +37,11 @@ telescope.load_extension("file_browser")
 
 local builtin = require('telescope.builtin')
 
-vim.keymap.set('n', '<Tab>ff', builtin.find_files, {})
-vim.keymap.set('n', '<Tab>fg', builtin.git_files, {})
-vim.keymap.set({'n', "v"}, '<Tab>fs', builtin.grep_string, {})
-vim.keymap.set('n', '<Tab>fl', builtin.live_grep, {})
-vim.keymap.set('n', '<Tab>fb', builtin.buffers, {})
-vim.keymap.set('n', '<Tab>fh', builtin.help_tags, {})
-vim.keymap.set("n", "<Tab>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>") -- open file_browser with the path of the current buffer
+vim.keymap.set('n', '<Tab>ff', builtin.find_files, {desc = "Telescope: find files"})
+vim.keymap.set('n', '<Tab>fg', builtin.git_files, {desc = "Telescope: find files in git repo"})
+vim.keymap.set({'n', "v"}, '<Tab>fs', builtin.grep_string, {desc = "Telescope: search string under cursor"})
+vim.keymap.set('n', '<Tab>fl', builtin.live_grep, {desc = "Telescope: live grep"})
+vim.keymap.set('n', '<Tab>fb', builtin.buffers, {desc = "Telescope: show active buffers"})
+vim.keymap.set('n', '<Tab>fh', builtin.help_tags, {desc = "Telescope: show help tags"})
+vim.keymap.set("n", "<Tab>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", {desc = "Telescope: file browser"})
 
