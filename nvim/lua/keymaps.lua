@@ -30,6 +30,5 @@ keymap.set("n", "<leader>tp", ":tabp<CR>", {desc = "go to previous tab"})
 
 -- file navigation
 keymap.set("n", "<C-d>", "<C-d>zz", {desc = "scroll down half page, keep cursor in middle"})
-keymap.set("n", "<space>", "<C-d>zz", {desc = "scroll down half page, keep cursor in middle"})
 keymap.set("n", "<C-u>", "<C-u>zz", {desc = "scroll up half page, keep cursor in middle"})
 
