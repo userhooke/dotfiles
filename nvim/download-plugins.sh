@@ -37,20 +37,23 @@ download nvim-telescope telescope-ui-select.nvim
 # for better code parsing and highlighting
 download nvim-treesitter nvim-treesitter 
 
-# completion plugin
+# LSP Support
+download VonHeikemen lsp-zero.nvim
+download neovim nvim-lspconfig
+download williamboman mason.nvim
+download williamboman mason-lspconfig.nvim
+
+# Autocompletion
 download hrsh7th nvim-cmp
-
-# source for text in buffer
 download hrsh7th cmp-buffer
-
-# source for file system paths
 download hrsh7th cmp-path
-
-# snippet engine
-download L3MON4D3 LuaSnip
-
-# for autocompletion
 download saadparwaiz1 cmp_luasnip
+download hrsh7th cmp-nvim-lsp
+download hrsh7th cmp-nvim-lua
+
+# Snippets
+download L3MON4D3 LuaSnip
+download rafamadriz friendly-snippets
 
 # Copilot integration
 download github copilot.vim # Start Neovim and invoke :Copilot setup.
@@ -58,7 +61,7 @@ download github copilot.vim # Start Neovim and invoke :Copilot setup.
 # game
 download theprimeagen vim-be-good
 
-# Optional non-neovim dependencies
+# Optional non-neovim dependencies for telescope
 # brew install ripgrep
 # brew install fd
 

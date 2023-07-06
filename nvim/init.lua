@@ -4,7 +4,7 @@ require("colorscheme")
 
 require("plugins.lualine")
 require("plugins.telescope")
-require("plugins.nvim-cpm")
+require("plugins.lsp")
 require("plugins.undotree")
 require("plugins.harpoon")
 require("plugins.which-key")
