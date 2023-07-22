@@ -55,3 +55,6 @@ decrypt() {
     fi 
 }
 
+decrypt-tar() {
+    decrypt $1 | tar -xvz
+}
