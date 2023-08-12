@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {desc = "Telescope: find f
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {desc = "Telescope: find files in git repo"})
 vim.keymap.set({'n', "v"}, '<leader>fs', builtin.grep_string, {desc = "Telescope: search string under cursor"})
 vim.keymap.set('n', '<leader>fl', builtin.live_grep, {desc = "Telescope: live grep"})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = "Telescope: show active buffers"})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = "Telescope: show help tags"})
+vim.keymap.set('n', '<leader>p', builtin.buffers, {desc = "Telescope: show active buffers"})
+vim.keymap.set('n', '<leader>h', builtin.help_tags, {desc = "Telescope: show help tags"})
 vim.keymap.set("n", "<leader>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", {desc = "Telescope: file browser"})
 

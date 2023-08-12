@@ -13,12 +13,6 @@ download rose-pine neovim
 # statusline
 download nvim-lualine lualine.nvim
 
-# undo tooling
-download mbbill undotree
-
-# quick buffer switcher
-download theprimeagen harpoon
-
 # UI helper for hotkeys
 download folke which-key.nvim
 
@@ -57,9 +51,6 @@ download rafamadriz friendly-snippets
 
 # Copilot integration
 download github copilot.vim # Start Neovim and invoke :Copilot setup.
-
-# game
-download theprimeagen vim-be-good
 
 # Optional non-neovim dependencies for telescope
 # brew install ripgrep
