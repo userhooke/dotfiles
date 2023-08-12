@@ -24,7 +24,7 @@ telescope.setup({
       themes.get_dropdown({}),
     },
     file_browser = {
-      hijack_netrw = true, -- disables netrw and use telescope-file-browser in its place
+      hijack_netrw = true, -- disables netrw and use telescope-file-browser in its placetele
       dir_icon = "🗂️",
       hidden = { file_browser = true, folder_browser = true },
     },
@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {desc = "Telescope: find f
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {desc = "Telescope: find files in git repo"})
 vim.keymap.set({'n', "v"}, '<leader>fs', builtin.grep_string, {desc = "Telescope: search string under cursor"})
 vim.keymap.set('n', '<leader>fl', builtin.live_grep, {desc = "Telescope: live grep"})
-vim.keymap.set('n', '<leader>p', builtin.buffers, {desc = "Telescope: show active buffers"})
-vim.keymap.set('n', '<leader>h', builtin.help_tags, {desc = "Telescope: show help tags"})
+
+vim.keymap.set('n', '<leader>b', builtin.buffers, {desc = "Telescope: show active buffers"})
 vim.keymap.set("n", "<leader>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", {desc = "Telescope: file browser"})
 
