@@ -13,7 +13,6 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>w", ":wa<CR>", {desc = "Save all opened files in tabs"}) 
 keymap.set("n", "<leader>q", ":qa<CR>", {desc = "Close all, exit vim"}) 
 keymap.set("n", "<leader>nh", ":nohl<CR>", {desc = "clear highlighted search results"})
-keymap.set("n", "<leader>r", ":!" , {desc = "run shell command"})
 
 -- window management
 keymap.set("n", "<leader>h", "<C-w>h", {desc = "focus left window"})
