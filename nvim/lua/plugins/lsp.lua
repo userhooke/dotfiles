@@ -50,5 +50,5 @@ lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
 
-vim.keymap.set("n", "<leader>r", "<cmd>LspRestart | edit<CR>", {desc = "Restart LSP"})
+vim.keymap.set("n", "<leader>r", "<cmd>LspStop | LspStart<CR>", {desc = "Restart LSP"})
 
