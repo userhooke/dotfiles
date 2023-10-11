@@ -38,9 +38,9 @@ telescope.load_extension("file_browser")
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {desc = "Telescope: find files"})
-vim.keymap.set('n', '<leader>fg', builtin.git_files, {desc = "Telescope: find files in git repo"})
 vim.keymap.set({'n', "v"}, '<leader>fs', builtin.grep_string, {desc = "Telescope: search string under cursor"})
 vim.keymap.set('n', '<leader>fl', builtin.live_grep, {desc = "Telescope: live grep"})
+vim.keymap.set('n', '<leader>fr', builtin.resume, {desc = "Telescope: resume last picker"})
 
 vim.keymap.set('n', '<leader>bb', builtin.buffers, {desc = "Telescope: show active buffers"})
 vim.keymap.set("n", "<leader>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", {desc = "Telescope: file browser"})
