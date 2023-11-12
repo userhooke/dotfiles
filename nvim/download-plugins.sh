@@ -49,6 +49,9 @@ download hrsh7th cmp-nvim-lua
 download L3MON4D3 LuaSnip
 download rafamadriz friendly-snippets
 
+# Helps to avoid bad habits
+download takac vim-hardtime
+
 # Optional non-neovim dependencies for telescope
 # brew install ripgrep
 # brew install fd

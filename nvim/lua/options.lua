@@ -30,11 +30,11 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- disable vim native backups
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+opt.swapfile = false
+opt.backup = false
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undofile = true
 
 -- do not go beyond specified when scrolling
-vim.opt.scrolloff = 8
+opt.scrolloff = 8
 
