@@ -44,4 +44,5 @@ vim.keymap.set('n', '<leader>fr', builtin.resume, {desc = "Telescope: resume las
 
 vim.keymap.set('n', '<leader>bb', builtin.buffers, {desc = "Telescope: show active buffers"})
 vim.keymap.set("n", "<leader>e", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", {desc = "Telescope: file browser"})
+vim.keymap.set('n', '<leader>mm', builtin.marks, {desc = "Telescope: show marks"})
 
