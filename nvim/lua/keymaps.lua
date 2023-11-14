@@ -33,5 +33,5 @@ keymap.set("n", "<C-u>", "<C-u>zz", {desc = "scroll up half page, keep cursor in
 keymap.set("n", "<leader>gb", ":!smerge blame %:p<CR>", {desc = "git blame current file"})
 
 -- marks
-keymap.set("n", "<leader>md", ":delm! | delm A-Z0-9", {desc = "delete all marks"})
+keymap.set("n", "<leader>md", ":delm! | delm A-Z0-9<CR>", {desc = "delete all marks"})
 
