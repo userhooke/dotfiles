@@ -1,0 +1,62 @@
+{
+  "editor.fontSize": 13,
+  "editor.fontLigatures": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.startupEditor": "none",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true
+  },
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "workbench.sideBar.location": "right",
+  "editor.suggestSelection": "first",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.showTabs": "single",
+  // "explorer.autoReveal": false,
+  "git.autofetch": true,
+  // "workbench.editor.enablePreview": false,
+  "debug.javascript.autoAttachFilter": "disabled",
+  "editor.autoClosingBrackets": "never",
+  "editor.accessibilitySupport": "off",
+  "editor.quickSuggestionsDelay": 5000,
+  "editor.suggestOnTriggerCharacters": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.openDiffOnClick": false,
+  "git.suggestSmartCommit": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.hover.delay": 1000,
+  "editor.minimap.enabled": false,
+  "[elm]": {
+    "editor.defaultFormatter": "elmTooling.elm-ls-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "window.commandCenter": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.position": "explorer",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "javascript.suggest.completeJSDocs": true,
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.diffAlgorithm": "advanced",
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.activityBar.location": "hidden",
+  "update.showReleaseNotes": false
+}

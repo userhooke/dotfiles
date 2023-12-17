@@ -1,7 +1,4 @@
 alias l="ls -ltrah"
-alias vim="nvim"
-alias vi="nvim"
-alias v="nvim ."
 
 backup() {
     TODAY=`date '+%Y_%m_%d__%H_%M_%S'`
